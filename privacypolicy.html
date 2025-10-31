@@ -13,13 +13,13 @@
     <style>
         /* Shared Styles */
         :root {
-            --bs-primary: #FF4500; --bs-info: #FFA500; --bs-dark-text: #F8F8F8; --bs-secondary-text: #B0B0B0; --bs-body-bg-color: #0A0A0A; --bs-light-bg: #1A1A1A; --bs-card-bg: #1F1F1F;
+            --bs-primary: #FF4500; --bs-info: #FFA500; --bs-dark-text: #070707; --bs-secondary-text: #090808; --bs-body-bg-color: #0A0A0A; --bs-light-bg: #1A1A1A; --bs-card-bg: #1F1F1F;
         }
         body {
             font-family: 'Inter', sans-serif; background-color: var(--bs-body-bg-color); color: var(--bs-dark-text); line-height: 1.6; min-height: 100vh;
             background-image: linear-gradient(45deg, var(--bs-body-bg-color) 25%, #181818 25%, #181818 50%, var(--bs-body-bg-color) 50%, var(--bs-body-bg-color) 75%, #181818 75%, #181818 100%); background-size: 8px 8px; 
         }
-        h1, h2, h3 { font-weight: 700; color: var(--bs-dark-text); text-transform: uppercase; }
+        h1, h2, h3 { font-weight: 700; color: var(--bs--text); text-transform: uppercase; }
         .card { background-color: var(--bs-card-bg); border: 1px solid #333; border-radius: 1rem; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 0 5px rgba(255, 255, 255, 0.08); }
         .text-primary { color: var(--bs-primary) !important; }
         .text-secondary-dark { color: var(--bs-secondary-text) !important; }
@@ -28,6 +28,17 @@
         .nav-link.active, .navbar-nav .nav-link.active { color: var(--bs-primary) !important; border-bottom: 2px solid var(--bs-primary); }
         .nav-link:hover { color: var(--bs-primary) !important; }
         .btn-primary { background: linear-gradient(180deg, var(--bs-primary) 0%, #E63900 100%) !important; border: none !important; color: #FFF !important; box-shadow: 0 8px 25px rgba(255, 69, 0, 0.4); }
+        /* Footer link color fix */
+footer a {
+  color: #e6eef6;                /* light gray-white for dark bg */
+  text-decoration: none;         /* remove underline */
+}
+
+footer a:hover {
+  color: #ff6a00;                /* your accent (orange) on hover */
+  text-decoration: underline;    /* optional hover underline */
+}
+
     </style>
 </head>
 <body>
