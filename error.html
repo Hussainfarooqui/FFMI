@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <meta name="description" content="The page you requested could not be found. Return to the FFMI Calculator.">
+
+    <!-- Inter Font and Bootstrap Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* Shared Styles */
+        :root {
+            --bs-primary: #FF4500; --bs-info: #FFA500; --bs-dark-text: #F8F8F8; --bs-secondary-text: #B0B0B0; --bs-body-bg-color: #0A0A0A; --bs-light-bg: #1A1A1A; --bs-card-bg: #1F1F1F;
+        }
+        body {
+            font-family: 'Inter', sans-serif; background-color: var(--bs-body-bg-color); color: var(--bs-dark-text); line-height: 1.6; min-height: 100vh;
+            background-image: linear-gradient(45deg, var(--bs-body-bg-color) 25%, #181818 25%, #181818 50%, var(--bs-body-bg-color) 50%, var(--bs-body-bg-color) 75%, #181818 75%, #181818 100%); background-size: 8px 8px; 
+        }
+        h1, h2, h3 { font-weight: 700; color: var(--bs-dark-text); text-transform: uppercase; }
+        .card { background-color: var(--bs-card-bg); border: 1px solid #333; border-radius: 1rem; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), inset 0 0 5px rgba(255, 255, 255, 0.08); }
+        .text-primary { color: var(--bs-primary) !important; }
+        .text-secondary-dark { color: var(--bs-secondary-text) !important; }
+        .bg-light-section { background-color: var(--bs-light-bg); }
+        .navbar { background-color: var(--bs-light-bg) !important; border-bottom: 1px solid #333; }
+        .nav-link.active, .navbar-nav .nav-link.active { color: var(--bs-primary) !important; border-bottom: 2px solid var(--bs-primary); }
+        .nav-link:hover { color: var(--bs-primary) !important; }
+        .btn-primary { background: linear-gradient(180deg, var(--bs-primary) 0%, #E63900 100%) !important; border: none !important; color: #FFF !important; box-shadow: 0 8px 25px rgba(255, 69, 0, 0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255, 69, 0, 0.7); filter: brightness(1.1); }
+        
+        .error-container {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 1;
+            color: var(--bs-primary);
+            text-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Sticky) -->
+    <header class="sticky-top border-bottom shadow-sm">
+        <div class="container py-3">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand fw-bold fs-4 text-primary" href="index.html">FFMI Calculator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Calculator</a></li>
+                        <li class="nav-item"><a class="nav-link" href="how-to-calculate-ffmi.html">How to</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ffmi-charts-ranges.html">Charts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html#calculator-section" class="btn btn-primary ms-lg-3 mt-2 mt-lg-0">Calculate Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Content Section -->
+        <section class="py-5 bg-light-section error-container">
+            <div class="container" style="max-width: 1140px;">
+                <div class="card p-4 p-md-5 shadow-lg border-0">
+                    <p class="error-code mb-2">404</p>
+                    <h1 class="mb-3">Page Not Found</h1>
+                    <p class="lead text-secondary-dark mb-4">The URL you requested might be incorrect or the page no longer exists. Let's get you back on track to calculating your potential.</p>
+                    <div class="d-grid gap-2 col-md-6 mx-auto">
+                        <a href="index.html" class="btn btn-primary btn-lg fw-bold">Return to Calculator Home</a>
+                        <a href="faq.html" class="btn btn-outline-primary fw-bold text-secondary-dark">View FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 border-top" style="background-color: #1A1A1A !important; border-color: #333 !important;">
+        <div class="container" style="max-width: 1140px;">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <h5 class="fw-bold text-primary text-uppercase">FFMI Calculator</h5>
+                    <p class="small text-secondary-dark">Accurate body composition assessment based on established anthropometric formulas. Driven by data, built for gains.</p>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h6 class="fw-bold text-primary">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="index.html" class="text-secondary-dark text-decoration-none">Calculator</a></li>
+                        <li><a href="how-to-calculate-ffmi.html" class="text-secondary-dark text-decoration-none">How to Calculate</a></li>
+                        <li><a href="ffmi-charts-ranges.html" class="text-secondary-dark text-decoration-none">FFMI Ranges</a></li>
+                        <li><a href="faq.html" class="text-secondary-dark text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h6 class="fw-bold text-primary">Legal</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="privacypolicy.html" class="text-secondary-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-secondary-dark text-decoration-none">Terms of Use</a></li>
+                        <li><a href="disclaimer.html" class="text-secondary-dark text-decoration-none">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color: #333;">
+            <div class="text-center small text-secondary-dark">
+                &copy; 2024 FFMI Calculator. All rights reserved. Prepared for Sultan Akhtar.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

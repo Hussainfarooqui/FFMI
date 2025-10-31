@@ -1,0 +1,7 @@
+# Ignore Word documents
+*.docx
+*.doc
+
+# Ignore sitemap and robots
+sitemap.xml
+robots.txt
